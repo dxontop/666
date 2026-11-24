@@ -111,6 +111,8 @@ const CONFIG =
     { name:'nyx', discordId:'919765436579610634' },
     { name:'yuhan', discordId:'1301551459305001001' },
     { name:'riri', discordId:'1005743967423438879' },
+    { name:'ego', discordId:'843509507899654155' },
+    { name:'burn', discordId:'972416260908392591' },
   ],
 
   twinDevils: [
