@@ -113,6 +113,10 @@ const CONFIG =
     { name:'riri', discordId:'1005743967423438879' },
   ],
 
+  twinDevils: [
+    // add { name:'name', discordId:'id' } here
+  ],
+
   reapers: [
     { name:'torjack', discordId:'901199422287913050' },
     { name:'matt', discordId:'1373311082214719561' },
@@ -297,7 +301,7 @@ function profileBanner(member){
 }
 
 const validOnly = arr => (arr || []).filter(m => m && m.name && m.name.trim());
-const ALL_POOLS = () => [CONFIG.oneAboveAll, CONFIG.thronekeeper, CONFIG.voidWardens, CONFIG.reapers, CONFIG.members];
+const ALL_POOLS = () => [CONFIG.oneAboveAll, CONFIG.thronekeeper, CONFIG.voidWardens, CONFIG.twinDevils, CONFIG.reapers, CONFIG.members];
 const BYID = {};
 ALL_POOLS().forEach(pool => validOnly(pool).forEach(m => { if(!BYID[m.discordId]) BYID[m.discordId] = m; }));
 const ALL = Object.keys(BYID);
@@ -316,6 +320,7 @@ const GROUPS = [
   ['The One Above All', CONFIG.oneAboveAll, 0],
   ['Thronekeeper', CONFIG.thronekeeper, 0],
   ['Void Warden', CONFIG.voidWardens, 0],
+  ['Twin Devils', CONFIG.twinDevils, 2],
   ['Reapers', CONFIG.reapers, 0],
   ['Members', CONFIG.members, 0],
 ];
