@@ -108,7 +108,7 @@ const CONFIG =
   ],
 
   voidWardens: [
-    { name:'nyx', music:'https://file.garden/awVxG5QkvdQT3UfA/blow%20my%20mind%20nyx.mp3', discordId:'919765436579610634' },
+    { name:'nyx', music:'https://file.garden/awVxG5QkvdQT3UfA/blow%20my%20mind%20nyx.mp3', background:'https://file.garden/awVxG5QkvdQT3UfA/nyxbanner.png', discordId:'919765436579610634' },
     { name:'yuhan', music:'https://file.garden/awVxG5QkvdQT3UfA/Yuhan%20Gangsta%20Baby.mp3', discordId:'1301551459305001001' },
     { name:'riri', discordId:'1005743967423438879' },
     { name:'ego', discordId:'843509507899654155' },
@@ -125,7 +125,7 @@ const CONFIG =
     { name:'lance', discordId:'947160516890079243' },
     { name:'disconnected', discordId:'864545257537667113' },
     { name:'gyuri', music:'https://file.garden/awVxG5QkvdQT3UfA/Gracenote%20-%20When%20I%20Dream%20About%20You.mp3', discordId:'1168573045267501140' },
-    { name:'nyx2', music:'https://file.garden/awVxG5QkvdQT3UfA/brent%20faiyaz%20-%20gang%20over%20luv%20nyx2.mp3', discordId:'1295876694267133986' },
+    { name:'nyx2', music:'https://file.garden/awVxG5QkvdQT3UfA/brent%20faiyaz%20-%20gang%20over%20luv%20nyx2.mp3', background:'https://file.garden/awVxG5QkvdQT3UfA/nyxbanner2', discordId:'1295876694267133986' },
   ],
 
   members: [
