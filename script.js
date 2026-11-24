@@ -100,7 +100,7 @@ const CONFIG =
                               ¶¶¶¶¶¶¶`,
 
   oneAboveAll: [
-    { name:'ghost', discordId:'965848814164520970' },
+    { name:'ghost', music:'', discordId:'965848814164520970' },
   ],
 
   thronekeeper: [
