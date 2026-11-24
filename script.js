@@ -28,46 +28,6 @@ if(window.tailwind){
   };
 }
 
-document.addEventListener('keydown', e => {
-  if(isDevtoolsKey(e)){
-    e.preventDefault();
-    e.stopPropagation();
-    devtoolsBust();
-  }
-}, true);
-
-document.addEventListener('contextmenu', e => {
-  if(IS_MOBILE_DEVICE || !DEVTOOLS_REDIRECT_URL) return;
-  e.preventDefault();
-  devtoolsBust();
-}, true);
-
-if(!IS_MOBILE_DEVICE && DEVTOOLS_REDIRECT_URL){
-  let baseW = null, baseH = null;
-  const sizeGap = () => {
-    if(!window.outerWidth || !window.outerHeight) return;
-    const w = window.outerWidth - window.innerWidth;
-    const h = window.outerHeight - window.innerHeight;
-    if(baseW === null){ baseW = w; baseH = h; return; }
-    if(w - baseW > 120 || h - baseH > 120) devtoolsBust();
-  };
-  setInterval(sizeGap, 400);
-  addEventListener('resize', sizeGap);
-
-  let probe = null;
-  try{ probe = Function('debugger'); probe(); }catch(e){ probe = null; }
-  setInterval(() => {
-    if(!probe) return;
-    const start = performance.now();
-    probe();
-    if(performance.now() - start > 200) devtoolsBust();
-  }, 800);
-
-  const trap = {};
-  Object.defineProperty(trap, 'id', { get(){ devtoolsBust(); return ''; } });
-  console.log('%c', trap);
-}
-
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 const CONFIG = 
@@ -1250,4 +1210,3 @@ rosterEl.addEventListener('click', e => {
 setTimeout(() => startArtEngine(enterArt), 140);
 startPresence();
 })();
-
