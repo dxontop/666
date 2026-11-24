@@ -104,7 +104,7 @@ const CONFIG =
   ],
 
   thronekeeper: [
-    { name:'regrxt', discordId:'924889435068309564' },
+    { name:'regrxt', music:'https://file.garden/awVxG5QkvdQT3UfA/King%20Von%20-%20Took%20Her%20To%20The%20O%20tetsu.mp3', background:'https://file.garden/awVxG5QkvdQT3UfA/tetsubg', discordId:'924889435068309564' },
   ],
 
   voidWardens: [
