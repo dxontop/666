@@ -110,7 +110,7 @@ const CONFIG =
   voidWardens: [
     { name:'nyx', music:'https://file.garden/awVxG5QkvdQT3UfA/blow%20my%20mind%20nyx.mp3', background:'https://file.garden/awVxG5QkvdQT3UfA/nyxbanner.png', discordId:'919765436579610634' },
     { name:'yuhan', music:'https://file.garden/awVxG5QkvdQT3UfA/Yuhan%20Gangsta%20Baby.mp3', discordId:'1301551459305001001' },
-    { name:'riri', discordId:'1005743967423438879' },
+    { name:'riri',  music:'https://file.garden/awVxG5QkvdQT3UfA/Just%20Hush%20-%20SHINOBI%20riri.mp3', discordId:'1005743967423438879' },
     { name:'ego', discordId:'843509507899654155' },
     { name:'burn', discordId:'972416260908392591' },
   ],
