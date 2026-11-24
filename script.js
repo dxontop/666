@@ -124,7 +124,7 @@ const CONFIG =
     { name:'matt', music:'https://file.garden/awVxG5QkvdQT3UfA/housewife%20tate.mp3', discordId:'1373311082214719561' },
     { name:'lance', discordId:'947160516890079243' },
     { name:'disconnected', discordId:'864545257537667113' },
-    { name:'gyuri', discordId:'1168573045267501140' },
+    { name:'gyuri', music:'https://file.garden/awVxG5QkvdQT3UfA/Gracenote%20-%20When%20I%20Dream%20About%20You.mp3', discordId:'1168573045267501140' },
     { name:'nyx2', discordId:'1295876694267133986' },
   ],
 
