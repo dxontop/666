@@ -114,17 +114,19 @@ const CONFIG =
   ],
 
   twinDevils: [
-    // add { name:'name', discordId:'id' } here
+    { name:'izana', discordId:'1329411181382991893' },
+    { name:'torjack', discordId:'901199422287913050' },
   ],
 
   reapers: [
-    { name:'torjack', discordId:'901199422287913050' },
     { name:'matt', discordId:'1373311082214719561' },
+    { name:'lance', discordId:'947160516890079243' },
+    { name:'disconnected', discordId:'864545257537667113' },
     { name:'gyuri', discordId:'1168573045267501140' },
   ],
 
   members: [
-    { name:'izana', discordId:'1329411181382991893' },
+    { name:'omsimnida', discordId:'736197542244778115' },
   ],
 
   music: {
