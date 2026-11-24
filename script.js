@@ -852,7 +852,7 @@ function startHoverMusic(member){
 
   hoverMusicAudio.pause();
   hoverMusicAudio.src = musicVal;
-  hoverMusicAudio.volume = 0.5;
+  hoverMusicAudio.volume = 0.2;
   hoverMusicUrl = musicVal;
 
   // Lower the website background music
