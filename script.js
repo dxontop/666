@@ -129,6 +129,7 @@ const CONFIG =
 
   members: [
     { name:'omsimnida', discordId:'736197542244778115' },
+    { name:'jano', discordId:'903443943423901726' },
   ],
 
   music: {
