@@ -124,7 +124,7 @@ const CONFIG =
   ],
 
   music: {
-    url: 'music/666.mp3',
+    url: 'https://file.garden/awVxG5QkvdQT3UfA/we%20back.mp3',
     volume: 0.50,
   },
 
