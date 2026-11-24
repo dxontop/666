@@ -121,7 +121,7 @@ const CONFIG =
   ],
 
   reapers: [
-    { name:'matt', discordId:'1373311082214719561' },
+    { name:'matt', music:'https://file.garden/awVxG5QkvdQT3UfA/Smoke%20Smoke.mp3', discordId:'1373311082214719561' },
     { name:'lance', discordId:'947160516890079243' },
     { name:'disconnected', discordId:'864545257537667113' },
     { name:'gyuri', discordId:'1168573045267501140' },
