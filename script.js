@@ -829,6 +829,55 @@ function positionHover(btn){
   hoverCard.style.top = Math.round(y) + 'px';
 }
 
+
+let hoverMusicAudio = null;
+let hoverMusicUrl = '';
+
+function startHoverMusic(member){
+  const musicVal = String(member && member.music ? member.music : '').trim();
+
+  if(!musicVal){
+    stopHoverMusic();
+    return;
+  }
+
+  if(!hoverMusicAudio){
+    hoverMusicAudio = new Audio();
+    hoverMusicAudio.preload = 'none';
+    hoverMusicAudio.onended = stopHoverMusic;
+  }
+
+  // Don't restart the same song unnecessarily
+  if(hoverMusicUrl === musicVal && !hoverMusicAudio.paused) return;
+
+  hoverMusicAudio.pause();
+  hoverMusicAudio.src = musicVal;
+  hoverMusicAudio.volume = 0.5;
+  hoverMusicUrl = musicVal;
+
+  // Lower the website background music
+  duckSiteAudio();
+
+  hoverMusicAudio.play().catch(() => {
+    stopHoverMusic();
+  });
+}
+
+function stopHoverMusic(){
+  if(!hoverMusicAudio || !hoverMusicUrl) return;
+
+  hoverMusicAudio.pause();
+  hoverMusicAudio.removeAttribute('src');
+  hoverMusicAudio.load();
+
+  hoverMusicUrl = '';
+
+  // Restore website background music
+  if(audioStarted) unduckSiteAudio();
+  else startAmbientAudio();
+}
+
+
 function showHover(btn){
   const member = BYID[btn.dataset.id];
   if(!member) return;
@@ -838,12 +887,18 @@ function showHover(btn){
   hoverCard.classList.add('on');
   hoverCard.setAttribute('aria-hidden', 'false');
   positionHover(btn);
+
+    // Play this member's music
+  startHoverMusic(member);
 }
 function hideHover(){
   hoverBtn = null;
   hoverId = null;
   hoverCard.classList.remove('on');
   hoverCard.setAttribute('aria-hidden', 'true');
+
+    // Stop the member's music
+  stopHoverMusic();
 }
 
 rosterEl.addEventListener('pointerover', e => {
