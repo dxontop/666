@@ -28,26 +28,6 @@ if(window.tailwind){
   };
 }
 
-const DEVTOOLS_REDIRECT_URL = 'https://pornhub.com/';
-const IS_MOBILE_DEVICE = matchMedia('(pointer: coarse)').matches
-  || /Android|iPhone|iPad|iPod|IEMobile|Opera Mini|Mobile/i.test(navigator.userAgent);
-let devtoolsCaught = false;
-
-function isDevtoolsKey(e){
-  const k = String(e.key || '').toLowerCase();
-  if(k === 'f12') return true;
-  if((e.ctrlKey || e.metaKey) && e.shiftKey && ['i','j','c','k','m'].includes(k)) return true;
-  if((e.ctrlKey || e.metaKey) && !e.shiftKey && k === 'u') return true;
-  return e.metaKey && e.altKey && ['i','j','c','u'].includes(k);
-}
-
-function devtoolsBust(){
-  if(devtoolsCaught || IS_MOBILE_DEVICE || !DEVTOOLS_REDIRECT_URL) return;
-  devtoolsCaught = true;
-  try{ location.replace(DEVTOOLS_REDIRECT_URL); }
-  catch(e){ location.href = DEVTOOLS_REDIRECT_URL; }
-}
-
 document.addEventListener('keydown', e => {
   if(isDevtoolsKey(e)){
     e.preventDefault();
