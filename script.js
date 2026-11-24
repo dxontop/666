@@ -35,7 +35,7 @@ const CONFIG =
   siteName: '666',
 
   copy: {
-    heroTagline:        'they hate us cuz they aint us',
+    heroTagline: '𝙊𝙣𝙚 𝙤𝙖𝙩𝙝. 𝙒e  𝙬𝙖𝙡𝙠 𝙬𝙝𝙚𝙧𝙚 𝙖𝙣𝙜𝙚𝙡𝙨 𝙬𝙤𝙣'𝙩.',
   },
 
   
