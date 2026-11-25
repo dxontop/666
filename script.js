@@ -131,6 +131,7 @@ const CONFIG =
   members: [
     { name:'omsimnida', discordId:'736197542244778115' },
     { name:'jano', discordId:'903443943423901726' },
+    { name:'lian', music:'https://file.garden/awVxG5QkvdQT3UfA/Roxanne.mp3', discordId:'1358441188599791781' },
   ],
 
   music: {
