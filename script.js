@@ -116,7 +116,7 @@ const CONFIG =
   ],
 
   twinDevils: [
-    { name:'izana', discordId:'1329411181382991893' },
+    { name:'izana', music:'https://file.garden/awVxG5QkvdQT3UfA/pouya.mp3', background:'https://file.garden/awVxG5QkvdQT3UfA/IMG_9665.gif', discordId:'1329411181382991893' },
     { name:'torjack', music:'https://file.garden/awVxG5QkvdQT3UfA/HOT%20KEYS%20-%20HELLMERRY%2C%20ScOOp%20Dogg%2C%20Buddahbeads%2C%20Daarth%2C%20%24kinny%20G%20(YELLOWTAPES%20VOL.%201).mp3', discordId:'901199422287913050' },
   ],
 
